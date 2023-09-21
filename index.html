@@ -10,6 +10,40 @@
 	<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
 	<script type="text/javascript" src="js/hash.js"></script>
+	<style>
+		body{
+			background: url(./IMG/background.jpg) repeat-y center top;
+			background-size: cover;
+		}
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			border-radius: 50%;
+		}
+		.fixed_box img:hover{
+			transform: translateY(-10px);
+			transition: all 0.5s;
+			box-shadow: 0 10px 5px rgba(0,0,0,0.5);
+		}
+		.fixed_box img{
+			transition: all 0.5s;
+			border-radius: 50%;
+		}
+		.img{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding-top: 20px;
+			background-color: #fff;
+			padding-bottom: 7px;
+		}
+		.img img{
+			width: 175px;
+		}
+	</style>
 </head>
 
 <body>
@@ -19,6 +53,9 @@
 		<div class="zoom-icon zoom-icon-in"></div>
 
 		<div class="magazine-viewport">
+			<div class="img">
+				<img src="./img/LOGO.svg" alt="">
+			</div>
 			<div class="container">
 				<div class="magazine">
 					<!-- Next button -->
@@ -31,6 +68,11 @@
 				<div id="slider-bar" class="turnjs-slider">
 					<div id="slider"></div>
 				</div>
+			</div>
+			<div class="fixed_box">
+				<a href="#page1">
+					<img src="./img/top.png" alt="">
+				</a>
 			</div>
 		</div>
 
@@ -82,7 +124,7 @@
 					// The number of pages
 					//본인의 페이지 수만큼 수정합니다! 수정하지 않으면 페이지 잘립니다~~~
 
-					pages: 17,
+					pages: 13,
 
 					// Events
 
